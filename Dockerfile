@@ -1,6 +1,6 @@
 FROM node:6-alpine
 LABEL maintainer "Tim Brust <tim.brust@sinnerschrader.com>"
 
-ENV REFRESHED_AT 2017-07-12
+ENV REFRESHED_AT 2017-08-14
 RUN apk update && apk upgrade
 RUN apk add git
