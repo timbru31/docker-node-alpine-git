@@ -1,6 +1,6 @@
 # Node.js with Git Dockerfile
 
-A minimal Dockerfile based on Node.js 6 LTS (Boron) branch (alpine) with the Git installed.
+A minimal Dockerfile based on Node.js 6 LTS (Boron) branch (alpine) with Git installed.
 
 ## What's included
 
