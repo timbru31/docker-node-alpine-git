@@ -3,4 +3,6 @@ LABEL maintainer "Tim Brust <tim.brust@sinnerschrader.com>"
 
 ENV REFRESHED_AT 2017-12-11
 
-RUN apk add --no-cache git
+RUN apk add --no-cache \
+  git \
+  openssh
