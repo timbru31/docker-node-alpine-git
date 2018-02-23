@@ -1,4 +1,4 @@
-FROM node:carbon-alpine@sha256:ef7249dd4f837b47e97a535097e83c754c3836430bc756a26bdecbc6ff2ad179
+FROM node:carbon-alpine@sha256:eae6c7c7cc06944b03ad8ee78d0cfb2b829b2836b9427ccc1103f2ea3d34ec4c
 LABEL maintainer "Tim Brust <tim.brust@sinnerschrader.com>"
 
 ENV REFRESHED_AT 2018-02-23
