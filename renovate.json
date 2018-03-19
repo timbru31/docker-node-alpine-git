@@ -1,7 +1,14 @@
 {
   "extends": [
-    "config:base",
-    ":docker",
-    "default:automergeDigest"
-  ]
+    "config:base"
+  ],
+  "digest": {
+    "automerge": true
+  },
+  "minor": {
+    "automerge": true
+  },
+  "patch": {
+    "automerge": true
+  }
 }
