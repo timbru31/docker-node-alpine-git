@@ -1,14 +1,10 @@
 {
   "extends": [
-    "config:base"
-  ],
-  "digest": {
-    "automerge": true
-  },
-  "minor": {
-    "automerge": true
-  },
-  "patch": {
-    "automerge": true
-  }
+    "config:base",
+    ":automergeDigest",
+    ":automergePatch",
+    ":automergeMinor",
+    ":automergePr",
+    ":docker"
+  ]
 }
