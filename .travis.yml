@@ -1,0 +1,10 @@
+language: generic
+
+services:
+  - docker
+
+before_install:
+  -  docker pull hadolint/hadolint
+
+script:
+  - docker run --rm -i hadolint/hadolint hadolint --ignore DL3018 - < Dockerfile
