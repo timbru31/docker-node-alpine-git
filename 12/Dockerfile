@@ -1,4 +1,4 @@
-FROM node:erbium-alpine@sha256:c175e68cb9d4832245e28b6e0c8fe04bfcb4a3bafcd5713ca34a8c984836634d
+FROM node:erbium-alpine@sha256:57a34fed5fd5f18879c5915e3d0daad5d03825c997763e78a72d3c96a7f1476f
 LABEL maintainer "Tim Brust <tim.brust@sinnerschrader.com>"
 
 ARG REFRESHED_AT
