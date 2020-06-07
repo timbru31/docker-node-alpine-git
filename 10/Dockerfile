@@ -7,3 +7,5 @@ ENV REFRESHED_AT $REFRESHED_AT
 RUN apk add --no-cache \
   git \
   openssh
+
+RUN npm install -g yarn
