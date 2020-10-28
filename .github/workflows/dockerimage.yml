@@ -11,3 +11,4 @@ jobs:
         run: |
           docker run -i $(docker build -q 10) /bin/sh -c "node --version && git --version"
           docker run -i $(docker build -q 12) /bin/sh -c "node --version && git --version"
+          docker run -i $(docker build -q 14) /bin/sh -c "node --version && git --version"
