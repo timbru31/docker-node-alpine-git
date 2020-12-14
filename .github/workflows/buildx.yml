@@ -8,7 +8,7 @@ on:
 
 jobs:
   buildx:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       fail-fast: false
       matrix:
@@ -31,13 +31,18 @@ jobs:
         run: |
           DOCKER_IMAGE=timbru31/node-alpine-git
 
-          TAGZ=$(echo ${{ matrix.docker-file.tags }} | tr "," "\n")
+          TAGZ=$(echo $FOO | tr "," "\n")
           VERSION=${TAGZ[0]}
 
           for tag in $TAGZ
           do
             TAGS="${TAGS},${DOCKER_IMAGE}:${tag}"
           done
+
+          echo $DOCKER_IMAGE
+          echo $TAGZ
+          echo $VERSION
+          echo $TAGS
 
           echo ::set-output name=docker_image::${DOCKER_IMAGE}
           echo ::set-output name=version::${VERSION}
