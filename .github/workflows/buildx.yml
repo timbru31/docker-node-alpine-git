@@ -35,9 +35,13 @@ jobs:
           TAGZ=($TEMP)
           VERSION=${TAGZ[0]}
 
-          for tag in $TAGZ
-          do
-            TAGS="${TAGS},${DOCKER_IMAGE}:${tag}"
+          for i in "${!TAGZ[@]}"; do
+            if [ "$i" -eq "0" ];
+            then
+              TAGS="${DOCKER_IMAGE}:${TAGZ[$i]}"
+            else
+              TAGS="${TAGS},${DOCKER_IMAGE}:${TAGZ[$i]}"
+            fi
           done
 
           echo $DOCKER_IMAGE
