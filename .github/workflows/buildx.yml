@@ -44,12 +44,6 @@ jobs:
             fi
           done
 
-          echo $DOCKER_IMAGE
-          echo ${TAGZ[0]}
-          echo ${TAGZ[1]}
-          echo $VERSION
-          echo $TAGS
-
           echo ::set-output name=docker_image::${DOCKER_IMAGE}
           echo ::set-output name=version::${VERSION}
           echo ::set-output name=tags::${TAGS}
