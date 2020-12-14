@@ -31,7 +31,7 @@ jobs:
         run: |
           DOCKER_IMAGE=timbru31/node-alpine-git
 
-          TEMP=${{ matrix.docker-file.tags }}
+          TEMP="${{ matrix.docker-file.tags }}"
           TAGZ=($TEMP)
           VERSION=${TAGZ[0]}
 
