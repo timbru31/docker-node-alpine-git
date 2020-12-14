@@ -41,7 +41,8 @@ jobs:
           done
 
           echo $DOCKER_IMAGE
-          echo $TAGZ
+          echo ${TAGZ[0]}
+          echo ${TAGZ[1]}
           echo $VERSION
           echo $TAGS
 
