@@ -8,19 +8,19 @@ on:
 
 jobs:
   buildx:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     strategy:
       fail-fast: false
       matrix:
         docker-file:
           - path: 10
-            tags: 10,dubnium
+            tags: "10 dubnium"
             platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6
           - path: 12
-            tags: 12,erbium
+            tags: "12 erbium"
             platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
           - path: 14
-            tags: 14,fermium,latest
+            tags: "14 fermium latest"
             platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
     steps:
       - name: Checkout
@@ -31,12 +31,17 @@ jobs:
         run: |
           DOCKER_IMAGE=timbru31/node-alpine-git
 
-          TAGZ=$(echo ${{ matrix.docker-file.tags }} | tr "," "\n")
+          TEMP="${{ matrix.docker-file.tags }}"
+          TAGZ=($TEMP)
           VERSION=${TAGZ[0]}
 
-          for tag in $TAGZ
-          do
-            TAGS="${TAGS},${DOCKER_IMAGE}:${tag}"
+          for i in "${!TAGZ[@]}"; do
+            if [ "$i" -eq "0" ];
+            then
+              TAGS="${DOCKER_IMAGE}:${TAGZ[$i]}"
+            else
+              TAGS="${TAGS},${DOCKER_IMAGE}:${TAGZ[$i]}"
+            fi
           done
 
           echo ::set-output name=docker_image::${DOCKER_IMAGE}
