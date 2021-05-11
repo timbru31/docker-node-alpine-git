@@ -1,9 +1,10 @@
-FROM node:fermium-alpine3.12
+FROM node:fermium-alpine3.13
 LABEL maintainer "Tim Brust <github@timbrust.de>"
 
 ARG REFRESHED_AT
 ENV REFRESHED_AT $REFRESHED_AT
 
-RUN apk add --no-cache \
-  git \
-  openssh
+RUN apk -U upgrade \
+  && apk add --no-cache \
+    git \
+    openssh
