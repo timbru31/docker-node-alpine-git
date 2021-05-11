@@ -13,9 +13,6 @@ jobs:
       fail-fast: false
       matrix:
         docker-file:
-          - path: 10
-            tags: "10 dubnium"
-            platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/386,linux/arm/v7,linux/arm/v6
           - path: 12
             tags: "12 erbium"
             platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
