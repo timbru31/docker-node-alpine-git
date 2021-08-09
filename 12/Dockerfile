@@ -1,4 +1,4 @@
-FROM node:erbium-alpine3.12
+FROM node:erbium-alpine3.14
 LABEL maintainer "Tim Brust <github@timbrust.de>"
 
 ARG REFRESHED_AT
