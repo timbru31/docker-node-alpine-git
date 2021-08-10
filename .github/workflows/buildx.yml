@@ -19,6 +19,10 @@ jobs:
           - path: 14
             tags: "14 fermium latest"
             platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
+          - path: 16
+            tags: "16 gallium"
+            platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/arm/v7,linux/arm/v6
+
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4

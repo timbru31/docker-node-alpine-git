@@ -4,12 +4,12 @@
 [![buildx Status](https://github.com/timbru31/docker-node-alpine-git/workflows/buildx/badge.svg)](https://github.com/timbru31/docker-node-alpine-git/actions?query=workflow%3Abuildx)
 [![Lint Dockerfiles](https://github.com/timbru31/docker-node-alpine-git/workflows/Lint%20Dockerfiles/badge.svg)](https://github.com/timbru31/docker-node-alpine-git/actions?query=workflow%3A%22Lint+Dockerfiles%22)
 
-A minimal Dockerfile based on Node.js 12 LTS (Erbium) or Node.js 14 LTS (Fermium) alpine with Git and ssh installed.
+A minimal Dockerfile based on Node.js 12 LTS (Erbium), Node.js 14 LTS (Fermium) or Node.js 16 (Gallium) alpine with Git and ssh installed.
 
 ## What's included
 
-- Node.js Node.js 12 LTS or Node.js 14 LTS
-- npm 6
+- Node.js Node.js 12 LTS, Node.js 14 LTS or Node.js 16
+- npm 6 (< Node.js 16) or npm 7 (Node.js 16)
 - yarn
 - Git
 - ssh
@@ -23,7 +23,7 @@ These Dockerfiles leverage the new `buildx` functionality and offer the followin
 - linux/arm/v7
 - linux/arm/v6
 - linux/ppc64le
-- linux/s390x
+- linux/s390x (not for Node.js 16 [upstream bug])
 
 ---
 
