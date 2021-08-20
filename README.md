@@ -23,7 +23,7 @@ These Dockerfiles leverage the new `buildx` functionality and offer the followin
 - linux/arm/v7
 - linux/arm/v6
 - linux/ppc64le
-- linux/s390x (not for Node.js 16 [upstream bug])
+- linux/s390x
 
 ---
 
