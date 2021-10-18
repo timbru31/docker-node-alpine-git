@@ -6,7 +6,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2.3.4
+      - uses: actions/checkout@v2.3.5
       - name: Build the Docker image
         run: |
           docker run -i $(docker build -q 12) /bin/sh -c "node --version && npm --version && git --version"
