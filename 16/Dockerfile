@@ -1,10 +1,2 @@
-FROM node:gallium-alpine
-LABEL maintainer "Tim Brust <github@timbrust.de>"
-
-ARG REFRESHED_AT
-ENV REFRESHED_AT $REFRESHED_AT
-
-RUN apk -U upgrade \
-  && apk add --no-cache \
-    git \
-    openssh
+FROM timbru31/node-alpine-git:16
+RUN apk -U upgrade && apk add --no-cache python3 make g++

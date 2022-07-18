@@ -27,7 +27,7 @@ jobs:
       - name: Prepare
         id: prepare
         run: |
-          DOCKER_IMAGE=timbru31/node-alpine-git
+          DOCKER_IMAGE=neur0toxine/node-alpine-git-gyp
 
           TEMP="${{ matrix.docker-file.tags }}"
           TAGZ=($TEMP)
