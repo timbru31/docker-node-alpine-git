@@ -9,5 +9,7 @@ jobs:
       - uses: actions/checkout@v3
       - name: Build the Docker image
         run: |
-          docker run -i $(docker build -q 14) /bin/sh -c "node --version && npm --version && git --version"
-          docker run -i $(docker build -q 16) /bin/sh -c "node --version && npm --version && git --version"
+          docker run -i $(docker build -q 14) /bin/sh -c "node --version && npm --version && git --version && python3 -V && make -v && g++ -v"
+          docker run -i $(docker build -q 16) /bin/sh -c "node --version && npm --version && git --version && python3 -V && make -v && g++ -v"
+          docker run -i $(docker build -q 14-3.13) /bin/sh -c "node --version && npm --version && git --version && python3 -V && make -v && g++ -v"
+          docker run -i $(docker build -q 16-3.13) /bin/sh -c "node --version && npm --version && git --version && python3 -V && make -v && g++ -v"
