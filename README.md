@@ -11,8 +11,12 @@ A minimal Dockerfile based on Node.js 14 LTS (Fermium) or Node.js 16 LTS (Galliu
 - Node.js 14 LTS (Fermium) or 16 LTS (Gallium)
 - npm 6 (Node.js 14) or npm 8 (Node.js 16)
 - yarn
+- Bash
 - Git
-- ssh
+- OpenSSH
+- Python 3.x (for node-gyp)
+- g++ (for node-gyp)
+- make
 
 ### Available platforms
 
