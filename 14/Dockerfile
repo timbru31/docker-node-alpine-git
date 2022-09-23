@@ -6,4 +6,5 @@ RUN apk -U upgrade \
     openssh \
     python3 \
     make \
-    g++
+    g++ \
+    pkgconfig
