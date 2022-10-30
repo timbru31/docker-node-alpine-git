@@ -17,10 +17,10 @@ jobs:
             tags: "14 fermium"
             platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
           - path: 16
-            tags: "16 gallium latest"
+            tags: "16 gallium"
             platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
           - path: 18
-            tags: "18 hydrogen"
+            tags: "18 hydrogen latest"
             platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
 
     steps:
