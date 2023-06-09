@@ -11,3 +11,17 @@ jobs:
         run: |
           docker run -i $(docker build -q 16) /bin/sh -c "node --version && npm --version && git --version"
           docker run -i $(docker build -q 18) /bin/sh -c "node --version && npm --version && git --version"
+
+  auto-merge:
+    runs-on: ubuntu-latest
+    needs: build
+
+    permissions:
+      pull-requests: write
+      contents: write
+
+    steps:
+      - name: Automatically merge dependabot upgrades
+        uses: fastify/github-action-merge-dependabot@v3
+        with:
+          target: minor
