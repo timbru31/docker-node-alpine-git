@@ -1,6 +1,10 @@
 name: Lint Dockerfiles
 
-on: [push, pull_request]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
 
 jobs:
   build:
@@ -8,4 +12,4 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: brew install hadolint
-      - run: hadolint {16,18}/Dockerfile
+      - run: hadolint {16,18,20}/Dockerfile

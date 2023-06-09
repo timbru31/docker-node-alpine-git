@@ -1,6 +1,11 @@
 name: Test Docker image
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -11,6 +16,7 @@ jobs:
         run: |
           docker run -i $(docker build -q 16) /bin/sh -c "node --version && npm --version && git --version"
           docker run -i $(docker build -q 18) /bin/sh -c "node --version && npm --version && git --version"
+          docker run -i $(docker build -q 20) /bin/sh -c "node --version && npm --version && git --version"
 
   auto-merge:
     runs-on: ubuntu-latest
