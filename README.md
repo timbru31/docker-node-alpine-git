@@ -9,7 +9,7 @@ A minimal Dockerfile based on Node.js 16 LTS (Gallium), Node.js 18 LTS (Hydrogen
 ## What's included
 
 - Node.js 16 LTS (Gallium), 18 LTS (Hydrogen) or 20 (Iron)
-- npm 8 (Node.js >=16)
+- npm 8 (Node.js 16) or npm 9 (Node.js >= 18)
 - yarn
 - Git
 - ssh

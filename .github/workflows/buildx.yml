@@ -5,6 +5,8 @@ on:
     - cron: "37 06 * * *"
   pull_request:
   push:
+    branches:
+      - master
 
 jobs:
   buildx:
