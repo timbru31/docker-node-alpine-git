@@ -10,6 +10,8 @@ jobs:
   build:
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v4.0.0
+
       - run: brew install hadolint
+
       - run: hadolint {16,18,20}/Dockerfile
