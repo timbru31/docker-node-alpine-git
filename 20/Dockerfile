@@ -1,4 +1,4 @@
-FROM node:fermium-alpine3.13
+FROM timbru31/node-alpine-git:20
 RUN apk -U upgrade \
   && apk add --no-cache \
     bash \

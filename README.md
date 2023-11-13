@@ -4,12 +4,12 @@
 [![buildx Status](https://github.com/Neur0toxine/docker-node-alpine-git-gyp/workflows/buildx/badge.svg)](https://github.com/Neur0toxine/docker-node-alpine-git-gyp/actions?query=workflow%3Abuildx)
 [![Lint Dockerfiles](https://github.com/Neur0toxine/docker-node-alpine-git-gyp/workflows/Lint%20Dockerfiles/badge.svg)](https://github.com/Neur0toxine/docker-node-alpine-git-gyp/actions?query=workflow%3A%22Lint+Dockerfiles%22)
 
-A minimal Dockerfile based on Node.js 14 LTS (Fermium), Node.js 16 LTS (Gallium) or Node.js 18 LTS (Hydrogen) alpine with Git and ssh installed.
+A minimal Dockerfile based on Node.js 16 LTS (Gallium), Node.js 18 LTS (Hydrogen) or Nodejs 20 LTS (Iron) & alpine with additional tools.
 
 ## What's included
 
 - Node.js 14 LTS (Fermium), 16 LTS (Gallium) or 18 LTS (Hydrogen)
-- npm 6 (Node.js 14) or npm 8 (Node.js >=16)
+- npm 8 (Node.js 16) or npm 9 (Node.js >= 18)
 - yarn
 - Bash
 - Git
