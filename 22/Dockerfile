@@ -1,4 +1,4 @@
-FROM node:iron-alpine
+FROM node:22-alpine
 LABEL maintainer "Tim Brust <github@timbrust.de>"
 
 ARG REFRESHED_AT
