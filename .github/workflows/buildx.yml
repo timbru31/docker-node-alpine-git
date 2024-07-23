@@ -16,11 +16,14 @@ jobs:
       matrix:
         docker-file:
           - path: 18
-            tags: "18 hydrogen latest"
+            tags: "18 hydrogen"
             platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
           - path: 20
-            tags: "20 iron"
+            tags: "20 iron latest"
             platforms: linux/amd64,linux/arm64,linux/ppc64le,linux/s390x,linux/arm/v7,linux/arm/v6
+          - path: 22
+            tags: "22 jod"
+            platforms: linux/amd64,linux/arm64,linux/s390x,linux/arm/v7,linux/arm/v6
 
     steps:
       - name: Checkout
