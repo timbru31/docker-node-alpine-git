@@ -1,4 +1,4 @@
-FROM node:hydrogen-alpine
+FROM node:18-alpine3.20
 LABEL maintainer "Tim Brust <github@timbrust.de>"
 
 ARG REFRESHED_AT
