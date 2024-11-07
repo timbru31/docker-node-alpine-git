@@ -4,12 +4,12 @@
 [![buildx Status](https://github.com/timbru31/docker-node-alpine-git/workflows/buildx/badge.svg)](https://github.com/timbru31/docker-node-alpine-git/actions?query=workflow%3Abuildx)
 [![Lint Dockerfiles](https://github.com/timbru31/docker-node-alpine-git/workflows/Lint%20Dockerfiles/badge.svg)](https://github.com/timbru31/docker-node-alpine-git/actions?query=workflow%3A%22Lint+Dockerfiles%22)
 
-A minimal Dockerfile based on Node.js 18 LTS (Hydrogen),  Node.js 20 LTS (Iron) or Node.js 22 (Jod) alpine with Git and ssh installed.
+A minimal Dockerfile based on Node.js 18 LTS (Hydrogen),  Node.js 20 LTS (Iron) or Node.js 22 LTS (Jod) alpine with Git and ssh installed.
 
 ## What's included
 
-- Node.js 18 LTS (Hydrogen), 20 LTS (Iron) or 22 (Jod)
-- npm 9
+- Node.js 18 LTS (Hydrogen), Node.js 20 LTS (Iron) or Node.js 22 LTS (Jod)
+- npm 10
 - yarn
 - Git
 - ssh
@@ -22,7 +22,7 @@ These Dockerfiles leverage the new `buildx` functionality and offer the followin
 - linux/arm64
 - linux/arm/v7
 - linux/arm/v6
-- linux/ppc64le (not for Node.js 22 (Jod))
+- linux/ppc64le (not for Node.js 22 LTS (Jod))
 - linux/s390x
 
 ---
