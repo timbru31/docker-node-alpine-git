@@ -20,9 +20,9 @@ These Dockerfiles leverage the new `buildx` functionality and offer the followin
 
 - linux/amd64
 - linux/arm64
-- linux/arm/v7
-- linux/arm/v6
-- linux/ppc64le (not for Node.js 22 LTS (Jod))
+- linux/arm/v7 (not for Node.js 24 (Krypton) or newer)
+- linux/arm/v6 (not for Node.js 24 (Krypton) or newer)
+- linux/ppc64le (not for Node.js 22 LTS (Jod) or newer)
 - linux/s390x
 
 ---
