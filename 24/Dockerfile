@@ -1,4 +1,4 @@
-FROM node:jod-alpine
+FROM node:24-alpine
 LABEL maintainer="Tim Brust <github@timbrust.de>"
 
 ARG REFRESHED_AT
