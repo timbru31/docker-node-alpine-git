@@ -16,7 +16,7 @@ jobs:
         node-version: [22, 24]
 
     steps:
-      - uses: actions/checkout@v6.0.3
+      - uses: actions/checkout@v7.0.0
 
       - name: Build and test Docker image
         run: |
