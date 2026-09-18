@@ -23,7 +23,7 @@ jobs:
             platforms: linux/amd64,linux/arm64,linux/s390x
           - path: 26
             tags: "26 lithium"
-            platforms: linux/amd64,linux/arm64,linux/s390x
+            platforms: linux/amd64,linux/arm64
 
     steps:
       - name: Checkout
